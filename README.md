@@ -4,7 +4,7 @@
 
 php -m 
 ```
-## append
+## add extension 
 
 ```
 SourceGuardian
