@@ -1,0 +1,7 @@
+version: "3"
+services:
+  nginx-php:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: seanly/test:nginx-php-fpm-v7.4
