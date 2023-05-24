@@ -5,3 +5,6 @@ services:
       context: .
       dockerfile: ./Dockerfile
     image: seanly/test:nginx-php-fpm-v7.4
+    ports:
+      - 80:80
+      - 443:443
