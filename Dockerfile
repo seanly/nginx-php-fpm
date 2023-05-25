@@ -86,5 +86,8 @@ WORKDIR /var/www/html
 # 配置 supervisor
 COPY ./rootfs /
 
+ONBUILD RUN mkdir -p /data/web_log/php-fpm/ && \
+    mkdir -p /data/web_log/nginx/
+    
 # 启动 PHP-FPM 和 Nginx 服务
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf", "-n"]
