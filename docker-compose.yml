@@ -1,10 +1,7 @@
-version: "3"
+
 services:
-  nginx-php:
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    image: seanly/test:nginx-php-fpm-v7.4
+  nginx-php-fpm:
+    image: seanly/nginx-php-fpm:7.4.33-1
     ports:
       - 80:80
       - 443:443

@@ -1,4 +1,5 @@
-FROM php:7.4.33-fpm-bullseye
+ARG VERSION=7.4.33
+FROM php:${VERSION}-fpm-bullseye
 
 # 安装基本依赖
 RUN apt-get update && \
